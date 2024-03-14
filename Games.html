@@ -1,21 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <style>
+        .banner{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0.75)),url(./img/photo-1616046229478-9901c5536a45.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.content{width: 100%;
+    position: absolute;
+    top: 50%;
+    background: #3c4343;
+    text-align: center;
+    color:white;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100px;
+    line-height: 25px;
+}
+
+button{
+    width:200px;
+    padding:15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #009688;
+    position: relative;
+}
+
+.logo{
+    width: 120px;
+    cursor:pointer;
+
+}
+
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li ::after{
+    content:'';
+    height: 3px;
+    width: 100%;
+    background-color: #009688;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.6s;
+    
+}
+
+.navbar ul li :hover::after{
+    width: 100%;
+ 
+}
+
+
+    </style>
         <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>WELCOME TO PLAZA</title>
                 <link rel="stylesheet" href="style.css">
 </head>
     <body>
+        <header class="header">
+        <div class="banner">
+            <div class="navbar">
            <img src="/home/antony/Downloads/61uQKdWCfAL._AC_UF1000,1000_QL80_.jpg" alt="image of ps5 controller"width=5%>  
            <h1><em>Games Plaza</h1></em>
             <form>
            <input type="text" placeholder="Search"/>
            <input type="submit" value="Go" />
             </form>
-                <nav>
-                    <a href="#home">Home</a> | <a href="#about">About</a> | <a href="#contact">Contact</a>
+                <nav class="nav">
+                    <div class="first"><a href="#home">Home</a> | <a href="#about">About</a> | <a href="#contact">Contact</a</div>
                 </nav>
+        </header>
+    </div>
+    <div class="content">
     <p><strong>HOME</p></strong>
     <section class="#featured games">
         <h2>Featured games</h2>
@@ -29,7 +125,8 @@
         </article>
             <section id="Home">
             <p>AFFORDABLE PC VIDEOGAMES AT THE TAP OF A BUTTON!!</p>
-        <img src="/home/antony/Downloads/images.jpeg" alt="image of crew motorfest" width="12%"> <img src="/home/antony/Downloads/images (1).jpeg" alt="image of expeditions" width="12%"> <img src="/home/antony/Downloads/images (2).jpeg" alt="Image of red dead" width="12%"> <img src="/home/antony/Downloads/bd653d83bdcc1613cfacae62845933633ce97fffc52e7e4070014eb41f9e75f7.avif" alt="image of FC24" width="22%"> <img src="/home/antony/Downloads/fb_image.jpg" alt="image of euro truck simulator 2" width="24%">
+            </div>
+                    <img src="/home/antony/Downloads/images.jpeg" alt="image of crew motorfest" width="12%"> <img src="/home/antony/Downloads/images (1).jpeg" alt="image of expeditions" width="12%"> <img src="/home/antony/Downloads/images (2).jpeg" alt="Image of red dead" width="12%"> <img src="/home/antony/Downloads/bd653d83bdcc1613cfacae62845933633ce97fffc52e7e4070014eb41f9e75f7.avif" alt="image of FC24" width="22%"> <img src="/home/antony/Downloads/fb_image.jpg" alt="image of euro truck simulator 2" width="24%">
                 <style>
                     table, th, td {
                 border:1px solid black;
