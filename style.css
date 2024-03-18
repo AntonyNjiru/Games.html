@@ -7,58 +7,39 @@
         padding:0;
         font-family: sans-serif;
     }
- h1{
-    color: white;
-    background-blend-mode:hue;
-    background-color: #4f4d48 rgb(234, 239, 239);
+    body {
+        font-family: "Open Sans", sans-serif;
+    }
     
- }
- div.first{
-    opacity: 0.9;
- }
-
- .nav{
-    color: white;
-    background-color: #4f4d48 ;
-    opacity: 0.8;
-    float: top;
-    text-align: center;
-    text-size-adjust:30px;
-
+    h1, h2, h3 {
+       font-family: "Lobster", cursive;
+    }
     
-}
-section {
-    background-color:rgb(107, 100, 102);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: centre;
-    color: white;
-
-}   
-h1{
-    text-align: center;
-    text-decoration: underline;
-    text-shadow: 4cm;
+    h2 {
+       color: #000000;
+    }
     
-}
-body{
-    background-color: rgb(225, 170, 31);
-}
-header{
-    background-color: rgb(225, 170, 31);
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-.center{
-    object-fit: contain;
-    align-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right:auto;
-    width: 50%;
+    header {
+        padding: 30px;
+        background-image: linear-gradient(to right, #000000, #a8d601, #60106B);
+        color: white;
+    }
     
-
-}
-footer{
-    background-color:rgb(230, 230, 24);
-}
+    header h2 {
+        color: #CEC8FF;
+    }
+    
+    footer {
+        background-image:linear-gradient(#cacbff,rgb(184, 221, 19));
+        padding: 20px 0;
+    }
+    
+    .row-content {
+        padding: 50px 0;
+        border-bottom: 1px ridge;
+        min-height: 200px;
+    }
+    
+    .navbar {
+        background-color: #000000;
+    }

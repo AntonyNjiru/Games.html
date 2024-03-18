@@ -1,152 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <style>
-        .banner{
-    width: 100%;
-    height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0.75)),url(./img/photo-1616046229478-9901c5536a45.avif);
-    background-size: cover;
-    background-position: center;
-}
-
-.content{width: 100%;
-    position: absolute;
-    top: 50%;
-    background: #3c4343;
-    text-align: center;
-    color:white;
-}
-
-.content h1{
-    font-size: 70px;
-    margin-top: 80px;
-}
-
-.content p{
-    margin: 20px auto;
-    font-weight: 100px;
-    line-height: 25px;
-}
-
-button{
-    width:200px;
-    padding:15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-    background: transparent;
-    border: 2px solid #009688;
-    position: relative;
-}
-
-.logo{
-    width: 120px;
-    cursor:pointer;
-
-}
-
-.navbar{
-    width: 80%;
-    margin: auto;
-    padding: 35px 0;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-}
-
-.navbar ul li a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
-
-.navbar ul li ::after{
-    content:'';
-    height: 3px;
-    width: 100%;
-    background-color: #009688;
-    position: absolute;
-    left:0;
-    bottom: -10px;
-    transition: 0.6s;
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-}
+    
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+    
+       <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+       <link rel="stylesheet" href="style.css" />
+            <title>WELCOME TO PLAZA</title>
+        </head>
+    
 
-.navbar ul li :hover::after{
-    width: 100%;
- 
-}
-
-
-    </style>
-        <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>WELCOME TO PLAZA</title>
-                <link rel="stylesheet" href="style.css">
-</head>
     <body>
-        <header class="header">
-        <div class="banner">
-            <div class="navbar">
-           <img src="/home/antony/Downloads/61uQKdWCfAL._AC_UF1000,1000_QL80_.jpg" alt="image of ps5 controller"width=5%>  
+       <!-- header -->
+    <header>
+        <div class="container">
+            <div class="row">
+            <div class="col-4 col-sm-3 col-md-2 align-self-center">
+           <img src="/home/antony/Downloads/61uQKdWCfAL._AC_UF1000,1000_QL80_.jpg" alt="image of ps5 controller"class="img-fluid">  
            <h1><em>Games Plaza</h1></em>
-            <form>
-           <input type="text" placeholder="Search"/>
-           <input type="submit" value="Go" />
-            </form>
-                <nav class="nav">
-                    <div class="first"><a href="#home">Home</a> | <a href="#about">About</a> | <a href="#contact">Contact</a</div>
-                </nav>
-        </header>
+        </div>
     </div>
-    <div class="content">
-    <p><strong>HOME</p></strong>
-    <section class="#featured games">
-        <h2>Featured games</h2>
-        <article class="games">
-            <img src="read dead redemption.jpg" alt="Read Dead redemption"class="center">
-            <h3> Read dead redemption</h3>
-            <img src="gta5.jpg" alt="Grand theft auto 5" class="center">
-            <h3> Grand Theft Auto V</h3>
-            <img src="forza horizon 5.jpg" alt="Forza Horizon 5"class="center">
-            <h3> Forza Horizon 5</h3>
-        </article>
-            <section id="Home">
-            <p>AFFORDABLE PC VIDEOGAMES AT THE TAP OF A BUTTON!!</p>
+</div>
+</header>
+
+ <!-- navbar -->
+ <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <a class="navbar-brand" href="#"><img src="/home/antony/Downloads/61uQKdWCfAL._AC_UF1000,1000_QL80_.jpg" alt="image of ps5 controller"height="30" width="30" /></a>
+    <form>
+        <input type="text" placeholder="Search"/>
+        <input type="submit" value="Go" />
+    </form>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#plazaNavbar">  
+        <div class="container">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#plazaNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nucampNavbar">
+        <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link active" href="#"><i class="fa-solid fa-house fa-lg"></i> Home</a></li>
+   <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa-solid fa-info fa-lg"></i> About</a></li>
+                </ul>
             </div>
-                    <img src="/home/antony/Downloads/images.jpeg" alt="image of crew motorfest" width="12%"> <img src="/home/antony/Downloads/images (1).jpeg" alt="image of expeditions" width="12%"> <img src="/home/antony/Downloads/images (2).jpeg" alt="Image of red dead" width="12%"> <img src="/home/antony/Downloads/bd653d83bdcc1613cfacae62845933633ce97fffc52e7e4070014eb41f9e75f7.avif" alt="image of FC24" width="22%"> <img src="/home/antony/Downloads/fb_image.jpg" alt="image of euro truck simulator 2" width="24%">
-                <style>
+        </div>
+</nav>            
+   
+ <!-- main section -->
+ <main class="container">
+    
+ <!-- feature section -->
+      <section class="row">
+        <div class="col-sm-4 col-md-3">
+            <h2>Featured games</h2>
+        </div>
+                        <article class="games">
+                            <img src="/home/antony/Downloads/download.jpeg" alt="Fallout 4" class="center">
+                                    <h3> Fallout 4</h3>
+                            <img src="/home/antony/Downloads/download.webp" alt="Far Cry Primal" class="center">
+                                    <h3> Far Cry Primal</h3>
+                             <img src="/home/antony/Downloads/download (1).jpeg" alt="Forza Horizon 5"class="center">
+                                    <h3> Forza Horizon 5</h3>
+                         </article>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <!-- games section -->
+        <section class="row">
+            <div class="col-sm-4 col-md-3 order-sm-before">
+                <h2 class="text-sm-before">Our Games</h2>
+            </div>
+            <div class="col">
+            <p>AFFORDABLE PC VIDEOGAMES AT THE TAP OF A BUTTON!!</p>
+        <img src="/home/antony/Downloads/images.jpeg" alt="image of crew motorfest" width="12%"> <img src="/home/antony/Downloads/images (1).jpeg" alt="image of expeditions" width="12%"> <img src="/home/antony/Downloads/images (2).jpeg" alt="Image of red dead" width="12%"> <img src="/home/antony/Downloads/bd653d83bdcc1613cfacae62845933633ce97fffc52e7e4070014eb41f9e75f7.avif" alt="image of FC24" width="22%"> <img src="/home/antony/Downloads/fb_image.jpg" alt="image of euro truck simulator 2" width="24%">
+               </div>
+               
+               <style>
                     table, th, td {
                 border:1px solid black;
-            }
+                                    }
                 </style>
                         <body>
                             <table>
                                 <thead>
                 <tr>
                     <th> action games </th>
-                        <th>adventure games </th>  
-                            <th>racing games</th>              
-                                </tr>
+                    <th>adventure games </th>  
+                    <th>racing games</th>              
+                                    </tr>
         </thead>
                 <tr>
                     <th>red dead redemption 2 </th>
-                        <th>expeditions a mudrunner game</th>
-                            <th>crew motorfest</th>
-                                </tr>
-                                    <table>
+                    <th>expeditions a mudrunner game</th>
+                    <th>crew motorfest</th>
+                                     </tr>
+                                <table>
             <select name="Games">
                     <option value="Game">Action Game</option>
                     <option value="Game">Adventure Game</option>
@@ -159,16 +115,17 @@ button{
                     <li>Simulator Games</li>
                         <li>Adventure Games</li>
                             <li>Football games</li>
-<h2><em>ABOUT</h2></em>
-<section id="About">
-    <P>Benny and Antony's Website for PC Games</P>
-            <h2><em>CONTACT</h2></em>
+
+        <h2><em>CONTACT</h2></em>
                 <section id="Contact">
                 <p>0712345678</p>
                     <p>info.plaza@gmail.com</p>
                         <a href="https://store.steampowered.com/">For More Videogames</a>
                 <!--Textarea-->
             <textarea name="comment" rows="5" cols="60" placeholder="Your comment here"></textarea>
-</body>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        </body>
 </html>
 
