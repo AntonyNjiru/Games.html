@@ -21,8 +21,8 @@
     
     header {
         padding: 30px;
-        background-image: linear-gradient(to right, #000000, #a8d601, #60106B);
-        color: white;
+        background-color: #000000;
+        color: white
     }
     
     header h2 {
